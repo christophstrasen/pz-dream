@@ -9,6 +9,13 @@ It exists to:
 - provide a single Workshop item that points at the required mods
 - ship examples and educational material
 
+## Documentation scope
+
+- This repo is the **suite entrypoint**: high-level orientation, curated examples, and user-facing guidance that spans multiple modules.
+- Module-specific docs live in the respective repos (WorldObserver, PromiseKeeper, SceneBuilder, etc.).
+- Maintainer coordination for the whole suite lives in `DREAM-Workspace`, including the workspace logbook:
+  - https://github.com/christophstrasen/DREAM-Workspace/blob/main/logbook.md
+
 ## Local development
 
 Deploy to your local Workshop wrapper folder (default):

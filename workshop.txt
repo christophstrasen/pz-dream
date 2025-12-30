@@ -1,6 +1,20 @@
 version=1
-title=DREAM — Declarative REactive Authoring Modules [42SP]
-description=Meta-mod and examples for the DREAM mod family (WorldObserver, PromiseKeeper, LQR, reactivex).
+title=[42SP] DREAM — Declarative REactive Authoring Modules
+description=DREAM - Meta mod and examples for the DREAM library suite (Build 42)
+
+NOT TESTED IN MULTIPLAYER. DON'T USE THERE. YOU HAVE BEEN WARNED. thx.
+
+DREAM is a maintainer-curated bundle mod with examples and documentation for:
+- WorldObserver (world sensing)
+- PromiseKeeper (persisted situation to action orchestration)
+- SceneBuilder (declarative scene spawning)
+- LQR and reactivex (foundational libraries)
+
+This is aimed at mid-level Lua mod developers who want reusable building blocks,
+not gameplay content. By itself, this mod is mainly an entrypoint and examples.
+
+GitHub:
+https://github.com/christophstrasen/pz-dream
+
 tags=Library;Utility;Build 42;Development
 visibility=Public
-

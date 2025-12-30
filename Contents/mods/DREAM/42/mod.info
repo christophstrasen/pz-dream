@@ -1,4 +1,4 @@
-name=DREAM — Declarative REactive Authoring Modules [42SP]
+name=[42SP] DREAM — Declarative REactive Authoring Modules
 id=DREAM
 description=Meta-mod and examples for the DREAM mod family (WorldObserver, PromiseKeeper, LQR, reactivex).
 versionMin=42.0

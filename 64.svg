@@ -23,10 +23,10 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
-     inkscape:zoom="2.3892475"
-     inkscape:cx="184.78621"
-     inkscape:cy="201.10934"
-     inkscape:window-width="2354"
+     inkscape:zoom="9.55699"
+     inkscape:cx="68.169999"
+     inkscape:cy="43.005172"
+     inkscape:window-width="2858"
      inkscape:window-height="2106"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -73,19 +73,132 @@
      style="fill:url(#pattern15)" />
   <!-- Text -->
   <text
-     x="32.923546"
-     y="43.030991"
+     x="32.660675"
+     y="40.670406"
      text-anchor="middle"
      font-size="64px"
      font-family="Inter, Roboto, Helvetica, Arial, sans-serif"
      font-weight="600"
      fill="#ffffff"
-     id="text3"
+     id="text3-7"
      inkscape:label="text"
-     style="font-size:18px"><tspan
+     style="font-size:26.6667px"><tspan
        sodipodi:role="line"
-       id="tspan9"
-       x="32.923546"
-       y="43.030991"
-       style="font-size:18px">DREAM</tspan></text>
+       id="tspan9-5"
+       x="32.660675"
+       y="40.670406"
+       style="font-size:26.6667px">R</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:48px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#8f8f8f;fill-opacity:0.306847"
+     x="91.765297"
+     y="-10.254275"
+     id="text1"><tspan
+       sodipodi:role="line"
+       id="tspan1"></tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:48px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#8f8f8f;fill-opacity:0.306847"
+     x="42.272724"
+     y="-13.497974"
+     id="text2"><tspan
+       sodipodi:role="line"
+       id="tspan2"></tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:48px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#8f8f8f;fill-opacity:0.306847"
+     x="22.601257"
+     y="49.387936"
+     id="text4"><tspan
+       sodipodi:role="line"
+       id="tspan3"></tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:48px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#8f8f8f;fill-opacity:0.306847"
+     x="80.673935"
+     y="-20.822456"
+     id="text5"><tspan
+       sodipodi:role="line"
+       id="tspan4"></tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:48px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#8f8f8f;fill-opacity:0.306847"
+     x="143.03667"
+     y="6.9059401"
+     id="text6"><tspan
+       sodipodi:role="line"
+       id="tspan5"
+       x="143.03667"
+       y="6.9059401"> </tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:48px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#8f8f8f;fill-opacity:0.306847"
+     x="34.425064"
+     y="30.867458"
+     id="text7"><tspan
+       sodipodi:role="line"
+       id="tspan6"></tspan></text>
+  <text
+     x="15.076517"
+     y="22.753893"
+     text-anchor="middle"
+     font-size="64px"
+     font-family="Inter, Roboto, Helvetica, Arial, sans-serif"
+     font-weight="600"
+     fill="#ffffff"
+     id="text3-7-6"
+     inkscape:label="text"
+     style="font-size:21.3333px"><tspan
+       sodipodi:role="line"
+       id="tspan9-5-2"
+       x="15.076517"
+       y="22.753893">D</tspan></text>
+  <text
+     x="14.925529"
+     y="57.565773"
+     text-anchor="middle"
+     font-size="64px"
+     font-family="Inter, Roboto, Helvetica, Arial, sans-serif"
+     font-weight="600"
+     fill="#ffffff"
+     id="text3-7-6-2"
+     inkscape:label="text"
+     style="font-size:21.3333px"><tspan
+       sodipodi:role="line"
+       id="tspan9-5-2-7"
+       x="14.925529"
+       y="57.565773"
+       style="font-size:21.3333px">A</tspan></text>
+  <text
+     x="49.912251"
+     y="58.340523"
+     text-anchor="middle"
+     font-size="64px"
+     font-family="Inter, Roboto, Helvetica, Arial, sans-serif"
+     font-weight="600"
+     fill="#ffffff"
+     id="text3-7-3"
+     inkscape:label="text"
+     style="font-size:21.3333px"><tspan
+       sodipodi:role="line"
+       id="tspan9-5-6"
+       x="49.912251"
+       y="58.340523"
+       style="font-size:21.3333px">M</tspan></text>
+  <text
+     x="50.865288"
+     y="23.18301"
+     text-anchor="middle"
+     font-size="64px"
+     font-family="Inter, Roboto, Helvetica, Arial, sans-serif"
+     font-weight="600"
+     fill="#ffffff"
+     id="text3-7-2"
+     inkscape:label="text"
+     style="font-size:21.3333px"><tspan
+       sodipodi:role="line"
+       id="tspan9-5-61"
+       x="50.865288"
+       y="23.18301"
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:21.3333px;font-family:Inter, Roboto, Helvetica, Arial, sans-serif;-inkscape-font-specification:'Inter, Roboto, Helvetica, Arial, sans-serif Semi-Bold'">E</tspan></text>
 </svg>

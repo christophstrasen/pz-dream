@@ -1,0 +1,6 @@
+version=1
+title=DREAM — Declarative REactive Authoring Modules [42SP]
+description=Meta-mod and examples for the DREAM mod family (WorldObserver, PromiseKeeper, LQR, reactivex).
+tags=Library;Utility;Build 42;Development
+visibility=Public
+

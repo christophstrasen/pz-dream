@@ -1,0 +1,10 @@
+name=DREAM — Declarative REactive Authoring Modules [42SP]
+id=DREAM
+description=Meta-mod and examples for the DREAM mod family (WorldObserver, PromiseKeeper, LQR, reactivex).
+versionMin=42.0
+poster=poster.png
+icon=icon_64.png
+authors=Karmachameleon
+version=0.1
+loadModAfer=\StarlitLibrary,\DoggyLibrary,\reactivex,\LQR,\PromiseKeeper,\WorldObserver
+

@@ -29,6 +29,8 @@ Deploy to your local mods folder:
 ./dev/sync-mods.sh
 ```
 
+Tip: all `dev/watch.sh` scripts default to `TARGET=workshop`. Use `TARGET=mods` if you prefer `~/Zomboid/mods`.
+
 ## DREAM suite
 
 For co-developing all DREAM modules together (sync all + watch all), use:

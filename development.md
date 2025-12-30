@@ -15,7 +15,7 @@ Watch + deploy (default: Workshop wrapper under `~/Zomboid/Workshop`):
 ./dev/watch.sh
 ```
 
-Switch destination:
+Optional: deploy to `~/Zomboid/mods` instead:
 
 ```bash
 TARGET=mods ./dev/watch.sh
@@ -33,4 +33,3 @@ For “suite-level” local testing, prefer using DREAM-Workspace and run:
 ./dev/sync-all.sh
 ./dev/smoke.sh
 ```
-

@@ -13,6 +13,8 @@ DEST_WRAPPER="$PZ_WORKSHOP_DIR/$WRAPPER_NAME"
 
 DEST_MOD_DIR="$DEST_WRAPPER/Contents/mods/$MOD_ID"
 
+"$SCRIPT_DIR/build-assets.sh"
+
 mkdir -p "$DEST_MOD_DIR"
 
 rsync -a "$REPO_ROOT/workshop.txt" "$DEST_WRAPPER/"
@@ -21,4 +23,3 @@ rsync -a --delete "$SRC_MOD_DIR/" "$DEST_MOD_DIR/"
 
 echo "[synced] $MOD_ID -> $DEST_MOD_DIR"
 echo "[wrapper] $DEST_WRAPPER"
-

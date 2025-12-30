@@ -11,10 +11,10 @@ It exists to:
 
 ## Local development
 
-Deploy to your local mods folder:
+Deploy to your local Workshop wrapper folder (default):
 
 ```bash
-./dev/sync-mods.sh
+./dev/sync-workshop.sh
 ```
 
 Watch mode:
@@ -23,9 +23,14 @@ Watch mode:
 ./dev/watch.sh
 ```
 
-Workshop wrapper folder (for upload preview):
+Deploy to your local mods folder:
 
 ```bash
-./dev/sync-workshop.sh
+./dev/sync-mods.sh
 ```
 
+## DREAM suite
+
+For co-developing all DREAM modules together (sync all + watch all), use:
+
+- https://github.com/christophstrasen/DREAM-Workspace

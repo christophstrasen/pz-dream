@@ -1,6 +1,9 @@
 # DREAM — Declarative REactive Authoring Modules [42SP]
 
-This repo is the **meta-mod** for the DREAM mod family.
+*The **meta-mod** for the DREAM mod family.*
+[![CI](https://github.com/christophstrasen/pz-dream/actions/workflows/ci.yml/badge.svg)](https://github.com/christophstrasen/pz-dream/actions/workflows/ci.yml)
+
+---
 
 - **Mod ID:** `DREAM`
 - **Display name:** `DREAM — Declarative REactive Authoring Modules [42SP]`

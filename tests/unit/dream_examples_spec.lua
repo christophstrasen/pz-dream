@@ -1,10 +1,4 @@
-package.path = table.concat({
-	"Contents/mods/DREAM/42/media/lua/shared/?.lua",
-	"Contents/mods/DREAM/42/media/lua/shared/?/init.lua",
-	package.path,
-}, ";")
-
-pcall(require, "DREAMBase/bootstrap")
+dofile("tests/unit/bootstrap.lua")
 
 describe("DREAM examples", function()
 	it("loads the examples placeholder module", function()
@@ -13,4 +7,3 @@ describe("DREAM examples", function()
 		assert.equals("DREAM examples placeholder", mod.name)
 	end)
 end)
-

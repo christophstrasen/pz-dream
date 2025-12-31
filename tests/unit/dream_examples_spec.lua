@@ -1,5 +1,3 @@
-dofile("tests/unit/bootstrap.lua")
-
 describe("DREAM examples", function()
 	it("loads the examples placeholder module", function()
 		local mod = require("examples/dream_examples")

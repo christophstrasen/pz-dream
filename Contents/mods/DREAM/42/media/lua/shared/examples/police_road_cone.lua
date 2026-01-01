@@ -46,14 +46,13 @@ function PoliceRoadCone.start(opts)
 		}),
 	}
 
-	local zombies = WorldObserver.observations:zombies():hasOutfit("Police%")
-	local squares = WorldObserver.observations:squares():isRoad()
-
 	wo.situations.define("policeOnRoad", function()
+		local zombies = WorldObserver.observations:zombies():hasOutfit("Police%")
+		local squares = WorldObserver.observations:squares():isRoad()
 		return WorldObserver.observations
-			:derive({ zombie = zombies, square = squares }, function(lqr)
-				return lqr.zombie
-					:innerJoin(lqr.square)
+			:derive({ zombie = zombies, square = squares }, function(LQR)
+				return LQR.zombie
+					:innerJoin(LQR.square)
 					:using({ zombie = "tileLocation", square = "tileLocation" })
 					:joinWindow({ time = 100 * 1000 })
 			end)
@@ -61,7 +60,7 @@ function PoliceRoadCone.start(opts)
 	end)
 
 	pk.actions.define("spawnRoadCone", function(subject)
-		local squareRecord = subject.square
+		local squareRecord = subject.squareT
 		local square = WorldObserver.helpers.square.record.getIsoGridSquare(squareRecord)
 
 		-- check if there is such a object already

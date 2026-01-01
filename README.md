@@ -42,7 +42,7 @@ DREAM examples use a small, explicit wildcard rule:
 Where this applies (today):
 - WorldObserver sprite interest `spriteNames` for `near` / `vision` scopes.
 - WorldObserver zombie outfit helpers (`:hasOutfit(...)`).
-- WorldObserver square floor material helpers (`:squareFloorMaterialMatches(...)`, `:isRoad()`).
+- WorldObserver square floor material helpers (`:squareHasFloorMaterial(...)`, `:hasFloorMaterial(...)`).
 
 Where this does **not** apply:
 - `sprites` with `scope = "onLoadWithSprite"` requires explicit names (no wildcards).

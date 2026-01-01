@@ -13,14 +13,13 @@ local CONE_DAMAGED = "damaged_objects_01_26"
 local leases
 local promise
 
-function PoliceRoadCone.start(opts)
-	opts = opts or {}
+function PoliceRoadCone.start()
 	PoliceRoadCone.stop()
 
 	local PromiseKeeper = require("PromiseKeeper")
 	local WorldObserver = require("WorldObserver")
 
-	local namespace = opts.namespace or "DREAM.PoliceRoadCone"
+	local namespace = "DREAM.PoliceRoadCone"
 	local pk = PromiseKeeper.namespace(namespace)
 	local wo = WorldObserver.namespace(namespace)
 
@@ -34,7 +33,6 @@ function PoliceRoadCone.start(opts)
 			zRange = { desired = 1, tolerable = 2 },
 			staleness = { desired = 0.5, tolerable = 1 },
 			cooldown = { desired = 0.5, tolerable = 1 },
-			--highlight = true,
 		}),
 		squares = wo.factInterest:declare("squares", {
 			type = "squares",
@@ -42,15 +40,14 @@ function PoliceRoadCone.start(opts)
 			radius = { desired = 20, tolerable = 5 },
 			staleness = { desired = 30, tolerable = 50 },
 			cooldown = { desired = 40, tolerable = 50 },
-			--highlight = true,
 		}),
 	}
 
 	wo.situations.define("policeOnRoad", function()
-		local zombies = WorldObserver.observations:zombies():hasOutfit("Police%")
-		local squares = WorldObserver.observations:squares():isRoad()
+		local policeZeds = WorldObserver.observations:zombies():hasOutfit("Police%")
+		local roadSquares = WorldObserver.observations:squares():hasFloorMaterial("Road%")
 		return WorldObserver.observations
-			:derive({ zombie = zombies, square = squares }, function(LQR)
+			:derive({ zombie = policeZeds, square = roadSquares }, function(LQR)
 				return LQR.zombie
 					:innerJoin(LQR.square)
 					:using({ zombie = "tileLocation", square = "tileLocation" })
@@ -60,11 +57,11 @@ function PoliceRoadCone.start(opts)
 	end)
 
 	pk.actions.define("spawnRoadCone", function(subject)
-		local squareRecord = subject.squareT
-		local square = WorldObserver.helpers.square.record.getIsoGridSquare(squareRecord)
+		local square = WorldObserver.helpers.square:wrap(subject.square)
+		local isoSquare = square:getIsoGridSquare()
 
 		-- check if there is such a object already
-		local objects = square:getObjects()
+		local objects = isoSquare:getObjects()
 		local count = objects:size()
 		for i = 0, count - 1 do
 			local obj = objects:get(i)
@@ -75,9 +72,12 @@ function PoliceRoadCone.start(opts)
 		end
 
 		-- spawn the cone
-		local obj = IsoObject.new(getWorld():getCell(), square, getSprite(CONE_SPRITE))
+		local obj = IsoObject.new(getWorld():getCell(), isoSquare, getSprite(CONE_SPRITE))
 		obj:setName("console_spawned_object")
-		square:AddTileObject(obj)
+		isoSquare:AddTileObject(obj)
+
+		-- highlight the success
+		square:highlight(2000, { color = { 1, 0.2, 0.2 }, alpha = 0.9, blink = false })
 	end)
 
 	promise = pk.promise({

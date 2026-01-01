@@ -19,6 +19,20 @@ It exists to:
 - Maintainer coordination for the whole suite lives in `DREAM-Workspace`, including the workspace logbook:
   - https://github.com/christophstrasen/DREAM-Workspace/blob/main/logbook.md
 
+## PromiseKeeper mental model (when this, then that)
+
+PromiseKeeper is the suite’s persistent “when this happens, do that” module:
+
+- A **promise** ties a `situationKey` (when) to an `actionId` (do that) with a `policy` (how often).
+- `promiseId` is the stable identity of the rule (how you recognize/replace/disable “that promise” later).
+- Each situation emission has an `occurranceKey` that identifies what the rule is acting on (tile, zombie,
+  player). This drives idempotence and deterministic chance.
+
+Read more in PromiseKeeper:
+- https://github.com/christophstrasen/PromiseKeeper/blob/main/docs/concepts/mental_model.md
+- https://github.com/christophstrasen/PromiseKeeper/blob/main/docs/concepts/ids.md
+- https://github.com/christophstrasen/PromiseKeeper/blob/main/docs/guides/policy.md
+
 ## Wildcard patterns
 
 DREAM examples use a small, explicit wildcard rule:

@@ -9,5 +9,8 @@
 
 return {
   name = "DREAM examples placeholder",
+  examples = {
+    "examples/police_road_cone",
+    "examples/marriage_story",
+  },
 }
-

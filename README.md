@@ -49,25 +49,7 @@ Where this does **not** apply:
 
 ## Local development
 
-Deploy to your local Workshop wrapper folder (default):
-
-```bash
-./dev/sync-workshop.sh
-```
-
-Watch mode:
-
-```bash
-./dev/watch.sh
-```
-
-Deploy to your local mods folder:
-
-```bash
-./dev/sync-mods.sh
-```
-
-Tip: all `dev/watch.sh` scripts default to `TARGET=workshop`. Use `TARGET=mods` if you prefer `~/Zomboid/mods`.
+See `development.md`.
 
 ## DREAM suite
 

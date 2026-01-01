@@ -5,9 +5,23 @@ This repo is the **meta-mod** for the DREAM mod family.
 Part of the DREAM suite:
 - DREAM-Workspace (multi-repo convenience): https://github.com/christophstrasen/DREAM-Workspace
 
-## Quickstart (single repo)
+Prereqs (for the `dev/` scripts): `rsync`, `inotifywait` (`inotify-tools`), `inkscape`.
 
-Prereqs: `rsync`, `inotifywait` (`inotify-tools`), `inkscape`.
+## Sync
+
+Deploy to your local Workshop wrapper folder (default):
+
+```bash
+./dev/sync-workshop.sh
+```
+
+Optional: deploy to `~/Zomboid/mods` instead:
+
+```bash
+./dev/sync-mods.sh
+```
+
+## Watch
 
 Watch + deploy (default: Workshop wrapper under `~/Zomboid/Workshop`):
 
@@ -21,15 +35,27 @@ Optional: deploy to `~/Zomboid/mods` instead:
 TARGET=mods ./dev/watch.sh
 ```
 
-## What to test
+## Tests
 
-Because this is a meta-mod, most changes are about:
-- dependencies in `mod.info`
-- examples / docs / learning material
+Headless unit tests (require/path + metadata sanity checks):
 
-For “suite-level” local testing, prefer using DREAM-Workspace and run:
+```bash
+busted --helper=tests/helper.lua tests/unit
+```
+
+Note: tests assume DREAMBase is available at `../DREAMBase` (DREAM-Workspace layout) or `external/DREAMBase`.
+
+## Suite testing
+
+For suite-level local testing, prefer using `DREAM-Workspace` and run (from the workspace root):
 
 ```bash
 ./dev/sync-all.sh
 ./dev/smoke.sh
 ```
+
+## Notes
+
+Because this is a meta-mod, most changes are about:
+- dependencies in `mod.info`
+- examples / docs / learning material

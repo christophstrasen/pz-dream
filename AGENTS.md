@@ -51,7 +51,9 @@ When a claim depends on module behavior, **verify it from those docs or code**. 
 ## Testing expectations
 
 - For changes to examples, `require()` paths, or mod layout, run repo tests:
+  - `luacheck Contents/mods/DREAM/42/media/lua/shared/examples`
   - `busted --helper=tests/helper.lua tests/unit`
+- Prefer using `pre-commit run --all-files` where available (mirrors CI).
 - For suite-level validation inside DREAM-Workspace, prefer:
   - `../dev/sync-all.sh`
   - `../dev/smoke.sh`

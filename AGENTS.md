@@ -13,6 +13,7 @@ Quick rules for working with this repo (the DREAM **meta-mod**).
 - Ask when unsure rather than guessing (especially about Build 42 API behavior).
 - Preserve behavior when refactoring; call out intentional behavior changes.
 - Prefer minimal changes over speculative “future-proofing”.
+- Prefer direct, fail-fast code in examples; avoid overly defensive guardrails or silent fallbacks.
 
 ## What this repo is (and is not)
 
@@ -38,6 +39,8 @@ When a claim depends on module behavior, **verify it from those docs or code**. 
 - **Keep `require()` paths Build 42 compatible:** use slash-separated paths (e.g. `require("examples/dream_examples")`), don’t rely on `init.lua` auto-loading, don’t hack `package.path` in shipped code.
 - **No ad-hoc logging:** use repo-provided utilities (typically `require("DREAMBase/util")`) instead of `print`.
 - **Preserve existing example contracts:** `Contents/mods/DREAM/42/media/lua/shared/examples/dream_examples.lua` is required by tests and must keep exporting a table with a `name` field.
+- **Zomboid style:** prefer direct calls that assume engine APIs exist; fail fast rather than wrapping everything in safe-call guards.
+- **Logging:** never include `:` in any `print` or log message text; use spaces or dashes instead.
 
 ## Project Zomboid + Lua constraints (baseline)
 

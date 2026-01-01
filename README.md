@@ -19,6 +19,20 @@ It exists to:
 - Maintainer coordination for the whole suite lives in `DREAM-Workspace`, including the workspace logbook:
   - https://github.com/christophstrasen/DREAM-Workspace/blob/main/logbook.md
 
+## Wildcard patterns
+
+DREAM examples use a small, explicit wildcard rule:
+- Trailing `%` means “prefix match” (example: `"Police%"`, `"Road%"`).
+- `%` by itself matches all names.
+
+Where this applies (today):
+- WorldObserver sprite interest `spriteNames` for `near` / `vision` scopes.
+- WorldObserver zombie outfit helpers (`:hasOutfit(...)`).
+- WorldObserver square floor material helpers (`:squareFloorMaterialMatches(...)`, `:isRoad()`).
+
+Where this does **not** apply:
+- `sprites` with `scope = "onLoadWithSprite"` requires explicit names (no wildcards).
+
 ## Local development
 
 Deploy to your local Workshop wrapper folder (default):
@@ -46,3 +60,9 @@ Tip: all `dev/watch.sh` scripts default to `TARGET=workshop`. Use `TARGET=mods` 
 For co-developing all DREAM modules together (sync all + watch all), use:
 
 - https://github.com/christophstrasen/DREAM-Workspace
+
+## Examples
+
+Console-friendly examples live under `Contents/mods/DREAM/42/media/lua/shared/examples/`.
+
+- `examples/police_road_cone`: When a police zombie walks over a road square, spawn a cone on that tile with a 25% chance (PromiseKeeper + WorldObserver).

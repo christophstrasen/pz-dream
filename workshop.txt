@@ -1,25 +1,26 @@
 version=1
+id=3637575202
 title=[42SP] DREAM — Declarative REactive Authoring Modules
 description=A set of high-level lua modules for Project Zomboid (Build 42, Single Player) intended to help authors structure world-driven logic through composable, declarative building blocks.
-
-NOT TESTED IN MULTIPLAYER. DON'T USE THERE. thx.
-
-DREAM is a maintainer-curated bundle mod with examples and documentation for:
-- WorldObserver (world sensing)
-- PromiseKeeper (persisted situation to action orchestration)
-- SceneBuilder (declarative scene spawning)
-- LQR and reactivex (prerequisite libraries)
-
-This suite is intended for experienced Project Zomboid modders.
-
-It may be worth exploring if you are working on larger or longer-lived mods and find yourself wanting more structure as features interact and accumulate.
-
-It is **not** intended as an introduction to modding. If you are new to Project Zomboid modding or still learning Lua fundamentals, this is likely not the right starting point.
-
-The modules are under active development, currently focused on single-player, and may change as ideas are refined. While individual parts are usable on their own, the overall approach has not yet been validated in large, production-scale mods.
-
-GitHub:
-https://github.com/christophstrasen/pz-dream
-
-tags=Library;Utility;Build 42;Development
+description=
+description=NOT TESTED IN MULTIPLAYER. DON'T USE THERE. thx.
+description=
+description=DREAM is a maintainer-curated bundle mod with examples and documentation for:
+description=- WorldObserver (world sensing)
+description=- PromiseKeeper (persisted situation to action orchestration)
+description=- SceneBuilder (declarative scene spawning)
+description=- LQR and reactivex (prerequisite libraries)
+description=
+description=This suite is intended for experienced Project Zomboid modders.
+description=
+description=It may be worth exploring if you are working on larger or longer-lived mods and find yourself wanting more structure as features interact and accumulate.
+description=
+description=It is **not** intended as an introduction to modding. If you are new to Project Zomboid modding or still learning Lua fundamentals, this is likely not the right starting point.
+description=
+description=The modules are under active development, currently focused on single-player, and may change as ideas are refined. While individual parts are usable on their own, the overall approach has not yet been validated in large, production-scale mods.
+description=
+description=GitHub:
+description=https://github.com/christophstrasen/pz-dream
+description=
+tags=Framework;Build 42;
 visibility=Public

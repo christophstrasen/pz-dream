@@ -6,7 +6,7 @@
 
 ---
 
-[Steam Workshop → [42SP] DREAM — Declarative REactive Authoring Modules](LinkTBD)
+[Steam Workshop → [42SP] DREAM — Declarative REactive Authoring Modules](https://steamcommunity.com/sharedfiles/filedetails/?id=3637575202)
 
 ---
 

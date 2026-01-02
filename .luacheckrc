@@ -8,6 +8,7 @@ globals = {
     "Events",
     "getCell",
     "getGameTime",
+    "getSoundManager",
     "ZombRand",
     "print",
     "isServer",
@@ -33,4 +34,3 @@ ignore = {
     "211", -- Unused variable
     "212"  -- Unused argument
 }
-

@@ -1,17 +1,22 @@
 version=1
 title=[42SP] DREAM — Declarative REactive Authoring Modules
-description=DREAM - Meta mod and examples for the DREAM library suite (Build 42)
+description=A set of high-level lua modules for Project Zomboid (Build 42, Single Player) intended to help authors structure world-driven logic through composable, declarative building blocks.
 
-NOT TESTED IN MULTIPLAYER. DON'T USE THERE. YOU HAVE BEEN WARNED. thx.
+NOT TESTED IN MULTIPLAYER. DON'T USE THERE. thx.
 
 DREAM is a maintainer-curated bundle mod with examples and documentation for:
 - WorldObserver (world sensing)
 - PromiseKeeper (persisted situation to action orchestration)
 - SceneBuilder (declarative scene spawning)
-- LQR and reactivex (foundational libraries)
+- LQR and reactivex (prerequisite libraries)
 
-This is aimed at mid-level Lua mod developers who want reusable building blocks,
-not gameplay content. By itself, this mod is mainly an entrypoint and examples.
+This suite is intended for experienced Project Zomboid modders.
+
+It may be worth exploring if you are working on larger or longer-lived mods and find yourself wanting more structure as features interact and accumulate.
+
+It is **not** intended as an introduction to modding. If you are new to Project Zomboid modding or still learning Lua fundamentals, this is likely not the right starting point.
+
+The modules are under active development, currently focused on single-player, and may change as ideas are refined. While individual parts are usable on their own, the overall approach has not yet been validated in large, production-scale mods.
 
 GitHub:
 https://github.com/christophstrasen/pz-dream

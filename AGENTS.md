@@ -36,9 +36,9 @@ When a claim depends on module behavior, **verify it from those docs or code**. 
 - **Target audience:** modders using the DREAM suite; keep examples copy/paste-ready and explain intent before details.
 - **Keep examples small and composable:** prefer “one concept per file” over big end-to-end demos.
 - **Prefer stable seams:** examples should use public APIs of modules; avoid reaching into internals unless the module docs explicitly endorse it.
-- **Keep `require()` paths Build 42 compatible:** use slash-separated paths (e.g. `require("examples/dream_examples")`), don’t rely on `init.lua` auto-loading, don’t hack `package.path` in shipped code.
+- **Keep `require()` paths Build 42 compatible:** use slash-separated paths (e.g. `require("dream_examples")`), don’t rely on `init.lua` auto-loading, don’t hack `package.path` in shipped code.
 - **No ad-hoc logging:** use repo-provided utilities (typically `require("DREAMBase/util")`) instead of `print`.
-- **Preserve existing example contracts:** `Contents/mods/DREAM/42/media/lua/shared/examples/dream_examples.lua` is required by tests and must keep exporting a table with a `name` field.
+- **Preserve existing example contracts:** `Contents/mods/DREAM/42/media/lua/shared/dream_examples.lua` is required by tests and must keep exporting a table with a `name` field.
 - **Zomboid style:** prefer direct calls that assume engine APIs exist; fail fast rather than wrapping everything in safe-call guards.
 - **Logging:** never include `:` in any `print` or log message text; use spaces or dashes instead.
 

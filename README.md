@@ -1,61 +1,24 @@
 # DREAM — Declarative REactive Authoring Modules [42SP]
 
-*The **meta-mod** for the DREAM mod family.*
+*The **meta-mod** for the [DREAM](https://github.com/christophstrasen/DREAM) family.*
+
 [![CI](https://github.com/christophstrasen/pz-dream/actions/workflows/ci.yml/badge.svg)](https://github.com/christophstrasen/pz-dream/actions/workflows/ci.yml)
 
 ---
 
-- **Mod ID:** `DREAM`
-- **Display name:** `DREAM — Declarative REactive Authoring Modules [42SP]`
+[Steam Workshop → [42SP] DREAM — Declarative REactive Authoring Modules](LinkTBD)
 
-It exists to:
-- provide a single Workshop item that points at the required mods
-- ship examples and educational material
+---
 
-## Documentation scope
+## Scope
 
-- This repo is the **suite entrypoint**: high-level orientation, curated examples, and user-facing guidance that spans multiple modules.
-- Module-specific docs live in the respective repos (WorldObserver, PromiseKeeper, SceneBuilder, etc.).
-- Maintainer coordination for the whole suite lives in `DREAM`, including the workspace logbook:
-  - https://github.com/christophstrasen/DREAM/blob/main/logbook.md
-
-## PromiseKeeper mental model (when this, then that)
-
-PromiseKeeper is the suite’s persistent “when this happens, do that” module:
-
-- A **promise** ties a `situationKey` (when) to an `actionId` (do that) with a `policy` (how often).
-- `promiseId` is the stable identity of the rule (how you recognize/replace/disable “that promise” later).
-- Each situation emission has an `occurranceKey` that identifies what the rule is acting on (tile, zombie,
-  player). This drives idempotence and deterministic chance.
-
-Read more in PromiseKeeper:
-- https://github.com/christophstrasen/PromiseKeeper/blob/main/docs/concepts/mental_model.md
-- https://github.com/christophstrasen/PromiseKeeper/blob/main/docs/concepts/ids.md
-- https://github.com/christophstrasen/PromiseKeeper/blob/main/docs/guides/policy.md
-
-## Wildcard patterns
-
-DREAM examples use a small, explicit wildcard rule:
-- Trailing `%` means “prefix match” (example: `"Police%"`, `"Road%"`).
-- `%` by itself matches all names.
-
-Where this applies (today):
-- WorldObserver sprite interest `spriteNames` for `near` / `vision` scopes.
-- WorldObserver zombie outfit helpers (`:hasOutfit(...)`).
-- WorldObserver square floor material helpers (`:squareHasFloorMaterial(...)`, `:hasFloorMaterial(...)`).
-
-Where this does **not** apply:
-- `sprites` with `scope = "onLoadWithSprite"` requires explicit names (no wildcards).
+- Provide a single Workshop item that requires the other modules
+- This repo is _not_ the **suite entrypoint** but rather a **packaging wrapper** to ship examples and small suite-wide educational and demo material that can be run in-game
+- For a proper high level introduction and for collaboration visit [DREAM](https://github.com/christophstrasen/DREAM)
 
 ## Local development
 
 See `development.md`.
-
-## DREAM suite
-
-For co-developing all DREAM modules together (sync all + watch all), use:
-
-- https://github.com/christophstrasen/DREAM
 
 ## Examples
 

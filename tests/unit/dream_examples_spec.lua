@@ -1,6 +1,6 @@
 describe("DREAM examples", function()
 	it("loads the examples placeholder module", function()
-		local mod = require("examples/dream_examples")
+		local mod = require("dream_examples")
 		assert.is_table(mod)
 		assert.equals("DREAM examples placeholder", mod.name)
 	end)

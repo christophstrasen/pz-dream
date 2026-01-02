@@ -1,0 +1,14 @@
+module DREAM {
+	sound DREAM_examples_weddingMarchMusicBox {
+		category = Trigger,
+		is3D = false,
+		loop = false,
+		clip {
+			file = media/sound/DREAM/examples/wedding-march-music-box-163683.mp3,
+			volume = 1.0,
+			distanceMin = 1,
+			distanceMax = 50,
+			reverbFactor = 0.1
+		}
+	}
+}

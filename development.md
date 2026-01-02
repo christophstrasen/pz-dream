@@ -3,7 +3,7 @@
 This repo is the **meta-mod** for the DREAM mod family.
 
 Part of the DREAM suite:
-- DREAM-Workspace (multi-repo convenience): https://github.com/christophstrasen/DREAM-Workspace
+- DREAM (multi-repo convenience): https://github.com/christophstrasen/DREAM
 
 Prereqs (for the `dev/` scripts): `rsync`, `inotifywait` (`inotify-tools`), `inkscape`.
 
@@ -43,7 +43,7 @@ Headless unit tests (require/path + metadata sanity checks):
 busted --helper=tests/helper.lua tests/unit
 ```
 
-Note: tests assume DREAMBase is available at `../DREAMBase` (DREAM-Workspace layout) or `external/DREAMBase`.
+Note: tests assume DREAMBase is available at `../DREAMBase` (DREAM layout) or `external/DREAMBase`.
 
 ## Lint
 
@@ -69,7 +69,7 @@ pre-commit run --all-files
 
 ## Suite testing
 
-For suite-level local testing, prefer using `DREAM-Workspace` and run (from the workspace root):
+For suite-level local testing, prefer using `DREAM` and run (from the workspace root):
 
 ```bash
 ./dev/sync-all.sh

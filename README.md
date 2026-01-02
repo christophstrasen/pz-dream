@@ -16,8 +16,8 @@ It exists to:
 
 - This repo is the **suite entrypoint**: high-level orientation, curated examples, and user-facing guidance that spans multiple modules.
 - Module-specific docs live in the respective repos (WorldObserver, PromiseKeeper, SceneBuilder, etc.).
-- Maintainer coordination for the whole suite lives in `DREAM-Workspace`, including the workspace logbook:
-  - https://github.com/christophstrasen/DREAM-Workspace/blob/main/logbook.md
+- Maintainer coordination for the whole suite lives in `DREAM`, including the workspace logbook:
+  - https://github.com/christophstrasen/DREAM/blob/main/logbook.md
 
 ## PromiseKeeper mental model (when this, then that)
 
@@ -55,7 +55,7 @@ See `development.md`.
 
 For co-developing all DREAM modules together (sync all + watch all), use:
 
-- https://github.com/christophstrasen/DREAM-Workspace
+- https://github.com/christophstrasen/DREAM
 
 ## Examples
 

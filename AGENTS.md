@@ -22,12 +22,12 @@ Quick rules for working with this repo (the DREAM **meta-mod**).
 
 ## Sources to load first (when writing docs/examples)
 
-Within DREAM-Workspace these repos sit next to `pz-dream/`:
+Within DREAM these repos sit next to `pz-dream/`:
 - WorldObserver: `../WorldObserver/readme.md`, `../WorldObserver/docs/`, plus `../WorldObserver/.aicontext/context.md`
 - PromiseKeeper: `../PromiseKeeper/readme.md`, `../PromiseKeeper/docs/`, plus `../PromiseKeeper/.aicontext/context.md`
 - SceneBuilder: `../SceneBuilder/readme.md`, plus `../SceneBuilder/.aicontext/context.md`
 
-If you are **not** operating inside DREAM-Workspace and those folders are missing, ask for the relevant repo version (or a link) before making claims about behavior/APIs.
+If you are **not** operating inside DREAM and those folders are missing, ask for the relevant repo version (or a link) before making claims about behavior/APIs.
 
 When a claim depends on module behavior, **verify it from those docs or code**. If it’s unclear, ask rather than guessing.
 
@@ -54,7 +54,7 @@ When a claim depends on module behavior, **verify it from those docs or code**. 
   - `luacheck Contents/mods/DREAM/42/media/lua/shared/examples`
   - `busted --helper=tests/helper.lua tests/unit`
 - Prefer using `pre-commit run --all-files` where available (mirrors CI).
-- For suite-level validation inside DREAM-Workspace, prefer:
+- For suite-level validation inside DREAM, prefer:
   - `../dev/sync-all.sh`
   - `../dev/smoke.sh`
 

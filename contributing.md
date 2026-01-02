@@ -4,7 +4,7 @@
 - the suite dependency list changes
 - examples / educational material changes
 
-Maintainer convenience repo (multi-repo sync/watch): https://github.com/christophstrasen/DREAM-Workspace
+Maintainer convenience repo (multi-repo sync/watch): https://github.com/christophstrasen/DREAM
 
 ## Development quickstart
 
